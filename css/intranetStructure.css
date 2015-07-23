@@ -1,0 +1,139 @@
+/*Custom Grid*/
+.grid-section {
+	padding: 0;
+	clear: both;
+	margin: 0;
+	text-align: center;
+}
+
+.col {
+	display: block;
+	float: left;
+	margin: auto;
+}
+
+.col:first-child {
+	margin-left: 0;
+}
+
+.group:before, .group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear: both;
+}
+
+.group {
+	zoom:1; /* For IE 6/7 */
+}
+.center {
+	margin: auto;
+}
+
+/*Grid of Twelve across 1060px*/
+.span-12-of-12 {
+	width: 100%;
+}
+
+.span-11-of-12 {
+	width: 91.67%
+}
+
+.span-10-of-12 {
+	width: 83.34%
+}
+
+.span-9-of-12 {
+	width: 75.01%
+}
+
+.span-8-of-12 {
+	width: 66.68%
+}
+
+.span-7-of-12 {
+	width: 58.35%
+}
+
+.span-6-of-12 {
+	width: 50.02%
+}
+
+.span-5-of-12 {
+	width: 41.69%
+}
+
+.span-4-of-12 {
+	width: 33.36%
+}
+
+.span-3-of-12 {
+	width: 25.03%
+}
+
+.span-2-of-12 {
+	width: 16.7%
+}
+
+.span-1-of-12 {
+	width: 8.37%
+}
+
+/*Less than 972px*/
+@media only screen and (max-width: 972px) {	
+.col {
+	margin: auto;
+}
+
+.span-12-of-12 {
+	width: 100%;
+}
+
+.span-11-of-12 {
+	width: 91.67%
+}
+
+.span-10-of-12 {
+	width: 83.34%
+}
+
+.span-9-of-12 {
+	width: 75.01%
+}
+
+.span-8-of-12 {
+	width: 66.68%
+}
+
+.span-7-of-12 {
+	width: 58.35%
+}
+
+.span-6-of-12 {
+	width: 50.02%
+}
+
+.span-5-of-12 {
+	width: 41.69%
+}
+
+.span-4-of-12 {
+	width: 33.36%
+}
+
+.span-3-of-12 {
+	width: 25.03%
+}
+
+.span-2-of-12 {
+	width: 16.7%
+}
+
+.span-1-of-12 {
+	width: 8.37%
+}
+}
+
+/*End of Grid*/
