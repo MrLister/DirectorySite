@@ -1,15 +1,15 @@
 /*Custom Grid*/
-.grid-section {
+.grid {
 	padding: 0;
 	clear: both;
 	margin: 0;
-	text-align: center;
 }
 
 .col {
 	display: block;
 	float: left;
-	margin: auto;
+	margin: 1% 0 1% 1.6%;
+	border: black 1px solid;
 }
 
 .col:first-child {
@@ -27,9 +27,6 @@
 
 .group {
 	zoom:1; /* For IE 6/7 */
-}
-.center {
-	margin: auto;
 }
 
 /*Grid of Twelve across 1060px*/
@@ -81,12 +78,30 @@
 	width: 8.37%
 }
 
-/*Less than 972px*/
-@media only screen and (max-width: 972px) {	
-.col {
-	margin: auto;
+.pageSet {
+	width: 100%;
 }
 
+.gridWrapper {
+	width: 1060px;
+	margin: auto;
+	text-align: center;
+}
+
+.center {
+	display: inline-block;
+	float: none;
+}
+
+.right {
+	display: inline-block;
+	float: right;
+	margin-right: 1.6%;
+}
+
+/*Start of @media resizing*/
+/*Less than 972px*/
+@media only screen and (max-width: 972px) {	
 .span-12-of-12 {
 	width: 100%;
 }
