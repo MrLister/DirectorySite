@@ -9,7 +9,7 @@
 	display: block;
 	float: left;
 	margin: 1% 0 1% 1.6%;
-	border: black 1px solid;
+	background-color: green;
 }
 
 .col:first-child {
@@ -30,52 +30,56 @@
 }
 
 /*Grid of Twelve across 1060px*/
+.span-12-of-12,.span-11-of-12,.span-10-of-12,.span-9-of-12,.span-8-of-12,.span-7-of-12,.span-6-of-12,.span-5-of-12,.span-4-of-12,.span-3-of-12,.span-2-of-12,.span-1-of-12 {
+	transition: all 0.3s ease;
+}
+
 .span-12-of-12 {
 	width: 100%;
 }
 
 .span-11-of-12 {
-	width: 91.67%
+	width: 91.53%;
 }
 
 .span-10-of-12 {
-	width: 83.34%
+	width: 83.06%;
 }
 
 .span-9-of-12 {
-	width: 75.01%
+	width: 74.6%;
 }
 
 .span-8-of-12 {
-	width: 66.68%
+	width: 66.13%;
 }
 
 .span-7-of-12 {
-	width: 58.35%
+	width: 57.66%;
 }
 
 .span-6-of-12 {
-	width: 50.02%
+	width: 49.2%;
 }
 
 .span-5-of-12 {
-	width: 41.69%
+	width: 40.73%;
 }
 
 .span-4-of-12 {
-	width: 33.36%
+	width: 32.26%;
 }
 
 .span-3-of-12 {
-	width: 25.03%
+	width: 23.8%;
 }
 
 .span-2-of-12 {
-	width: 16.7%
+	width: 15.33%;
 }
 
 .span-1-of-12 {
-	width: 8.37%
+	width: 6.866%;
 }
 
 .pageSet {
@@ -83,7 +87,7 @@
 }
 
 .gridWrapper {
-	width: 1060px;
+	max-width: 1060px;
 	margin: auto;
 	text-align: center;
 }
@@ -96,59 +100,24 @@
 .right {
 	display: inline-block;
 	float: right;
-	margin-right: 1.6%;
+	margin: 1% 1.6% 1% 0;
 }
+
+.right:first-child {
+	margin-right: 0;
+}
+/*End of Grid*/
+
 
 /*Start of @media resizing*/
-/*Less than 972px*/
-@media only screen and (max-width: 972px) {	
-.span-12-of-12 {
+@media only screen and (max-width: 480px) {
+.col {
+	margin-left: 0;
+}
+
+.span-12-of-12,.span-11-of-12,.span-10-of-12,.span-9-of-12,.span-8-of-12,.span-7-of-12,.span-6-of-12,.span-5-of-12,.span-4-of-12,.span-3-of-12,.span-2-of-12,.span-1-of-12 {
 	width: 100%;
 }
-
-.span-11-of-12 {
-	width: 91.67%
 }
 
-.span-10-of-12 {
-	width: 83.34%
-}
-
-.span-9-of-12 {
-	width: 75.01%
-}
-
-.span-8-of-12 {
-	width: 66.68%
-}
-
-.span-7-of-12 {
-	width: 58.35%
-}
-
-.span-6-of-12 {
-	width: 50.02%
-}
-
-.span-5-of-12 {
-	width: 41.69%
-}
-
-.span-4-of-12 {
-	width: 33.36%
-}
-
-.span-3-of-12 {
-	width: 25.03%
-}
-
-.span-2-of-12 {
-	width: 16.7%
-}
-
-.span-1-of-12 {
-	width: 8.37%
-}
-}
-
-/*End of Grid*/
+/*End of @media resizing*/
