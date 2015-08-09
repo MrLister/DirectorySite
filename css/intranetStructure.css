@@ -9,7 +9,7 @@
 	display: block;
 	float: left;
 	margin: 1% 0 1% 1.6%;
-	background-color: green;
+	background-color: #FFF;
 }
 
 .col:first-child {
@@ -31,7 +31,7 @@
 
 /*Grid of Twelve across 1060px*/
 .span-12-of-12,.span-11-of-12,.span-10-of-12,.span-9-of-12,.span-8-of-12,.span-7-of-12,.span-6-of-12,.span-5-of-12,.span-4-of-12,.span-3-of-12,.span-2-of-12,.span-1-of-12 {
-	transition: all 0.3s ease;
+	transition: all 0.4s ease;
 }
 
 .span-12-of-12 {
@@ -92,7 +92,7 @@
 	text-align: center;
 }
 
-.center {
+.center {	
 	display: inline-block;
 	float: none;
 }
@@ -108,6 +108,40 @@
 }
 /*End of Grid*/
 
+/*Page CSS*/
+body {
+	background-image: url(../img/WallPaperWood1080.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.widthImg {
+	width: 100%;
+}
+
+.navMenu {
+	height: 50px;
+	border-radius: 10px;
+	background-color: #F22;
+}
+
+.navMenu div {
+	height: auto;
+	padding: 6px 2.5em;
+	margin: 0;
+	border-left: solid #000 2px;
+	vertical-align: middle;
+}
+
+.navMenu span {
+	display: block;
+	padding: 10px;
+	transition: all 0.4s ease;
+}
+
+.navMenu div:first-child {
+	border-left: transparent;
+}
 
 /*Start of @media resizing*/
 @media only screen and (max-width: 480px) {
@@ -115,9 +149,15 @@
 	margin-left: 0;
 }
 
+.right {
+	float: none;
+}
+
 .span-12-of-12,.span-11-of-12,.span-10-of-12,.span-9-of-12,.span-8-of-12,.span-7-of-12,.span-6-of-12,.span-5-of-12,.span-4-of-12,.span-3-of-12,.span-2-of-12,.span-1-of-12 {
 	width: 100%;
 }
+
 }
 
 /*End of @media resizing*/
+
